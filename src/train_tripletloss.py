@@ -421,7 +421,7 @@ def parse_arguments(argv):
     parser.add_argument('--logs_base_dir', type=str, 
         help='Directory where to write event logs.', default='~/logs/facenet')
     parser.add_argument('--models_base_dir', type=str,
-        help='Directory where to write trained models and checkpoints.', default='/home/facenet/src/models/20210201')
+        help='Directory where to write trained models and checkpoints.', default='/home/facenet/src/models/20210207')
     parser.add_argument('--gpu_memory_fraction', type=float,
         help='Upper bound on the amount of GPU memory that will be used by the process.', default=4.0)
     parser.add_argument('--pretrained_model', type=str,
@@ -474,7 +474,7 @@ def parse_arguments(argv):
 
     # Parameters for validation on LFW
     parser.add_argument('--lfw_pairs', type=str,
-        help='The file containing the pairs to use for validation.', default='data/pairs.txt')
+        help='The file containing the pairs to use for validation.', default='/home/facenet/data/lfw-dataset/lfw_funneled/pairs.txt')
     parser.add_argument('--lfw_dir', type=str,
         help='Path to the data directory containing aligned face patches.', default='')
     parser.add_argument('--lfw_nrof_folds', type=int,
