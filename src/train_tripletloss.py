@@ -172,8 +172,8 @@ def main(args):
 
             if args.pretrained_model:
                 print('Restoring pretrained model: %s' % args.pretrained_model)
-                saver.restore(sess, args.pretrained_model)
-                # facenet.load_model(args.pretrained_model)
+                # saver.restore(sess, os.path.expanduser(args.pretrained_model))
+                facenet.load_model(args.pretrained_model)
 
             # Training and validation loop
             epoch = 0
@@ -426,7 +426,7 @@ def parse_arguments(argv):
     parser.add_argument('--gpu_memory_fraction', type=float,
         help='Upper bound on the amount of GPU memory that will be used by the process.', default=4.0)
     parser.add_argument('--pretrained_model', type=str,
-        help='Load a pretrained model before training starts.', default='/home/facenet/src/models/20180408-102900/model-20180408-102900.ckpt-90')
+        help='Load a pretrained model before training starts.', default='/home/facenet/src/models/20180408-102900/20180408-102900.pb')
     parser.add_argument('--data_dir', type=str,
         help='Path to the data directory containing aligned face patches.',
         default='/home/facenet/data/lfw-dataset/lfw_funneled')
