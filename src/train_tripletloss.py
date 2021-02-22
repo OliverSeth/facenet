@@ -426,10 +426,10 @@ def parse_arguments(argv):
     parser.add_argument('--gpu_memory_fraction', type=float,
         help='Upper bound on the amount of GPU memory that will be used by the process.', default=4.0)
     parser.add_argument('--pretrained_model', type=str,
-        help='Load a pretrained model before training starts.', default='/home/facenet/src/models/20180408-102900/20180408-102900.pb')
+        help='Load a pretrained model before training starts.')
     parser.add_argument('--data_dir', type=str,
         help='Path to the data directory containing aligned face patches.',
-        default='/home/facenet/data/lfw-dataset/lfw_funneled')
+        default='/home/facenet/data/lfw-dataset/lfw_train')
     parser.add_argument('--model_def', type=str,
         help='Model definition. Points to a module containing the definition of the inference graph.', default='models.inception_resnet_v1')
     parser.add_argument('--max_nrof_epochs', type=int,
