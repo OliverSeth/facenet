@@ -71,8 +71,8 @@ def add_extension(path):
         return path+'.jpg'
     elif os.path.exists(path+'.png'):
         return path+'.png'
-    else:
-        raise RuntimeError('No file "%s" with extension png or jpg.' % path)
+    # else:
+    #     raise RuntimeError('No file "%s" with extension png or jpg.' % path)
 
 def read_pairs(pairs_filename):
     pairs = []
