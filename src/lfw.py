@@ -63,15 +63,16 @@ def get_paths(lfw_dir, pairs):
             nrof_skipped_pairs += 1
     if nrof_skipped_pairs>0:
         print('Skipped %d image pairs' % nrof_skipped_pairs)
-    
+
     return path_list, issame_list
-  
+
 def add_extension(path):
     if os.path.exists(path+'.jpg'):
         return path+'.jpg'
     elif os.path.exists(path+'.png'):
         return path+'.png'
-    # else:
+    else:
+        return path
     #     raise RuntimeError('No file "%s" with extension png or jpg.' % path)
 
 def read_pairs(pairs_filename):
