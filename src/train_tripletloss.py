@@ -433,7 +433,7 @@ def parse_arguments(argv):
     parser.add_argument('--model_def', type=str,
         help='Model definition. Points to a module containing the definition of the inference graph.', default='models.inception_resnet_v1')
     parser.add_argument('--max_nrof_epochs', type=int,
-        help='Number of epochs to run.', default=500)
+        help='Number of epochs to run.', default=100)
     parser.add_argument('--batch_size', type=int,
         help='Number of images to process in a batch.', default=90)
     parser.add_argument('--image_size', type=int,
