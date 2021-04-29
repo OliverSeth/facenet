@@ -1,0 +1,4 @@
+model_checkpoint_path: "/home/facenet/src/models/20210420-054255/model-20210420-054255.ckpt-1013"
+all_model_checkpoint_paths: "/home/facenet/src/models/20210420-054255/model-20210420-054255.ckpt-811"
+all_model_checkpoint_paths: "/home/facenet/src/models/20210420-054255/model-20210420-054255.ckpt-912"
+all_model_checkpoint_paths: "/home/facenet/src/models/20210420-054255/model-20210420-054255.ckpt-1013"
